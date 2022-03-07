@@ -38,22 +38,22 @@ Users should be able to:
 
 ## My process
 
-Looking at the design pic, theres a drop-shadow around the 
+Looking at the design pic, 
 <main> div [make flexbox], 
 	then inside an img, 
 			h1, 
 			p, 
 			ul [make flexbox] 
-				(with two imgs next to text (maybe two smaller flexbox ls elements?)), 
+				(with two imgs next to text (maybe two smaller flexbox ls elements?)), [could have just used divs within divs]
 			hr, 
 			image + text next to it {flexbox}
-Maybe I could make the the main card a grid. Can you do a dropshadow on a grid? Might just be easier to do flexbox within flexbox. Don't think I need the card to flex. it's already small enough to fit on phone screens,
+Might just be easier to do flexbox within flexbox. Don't think I need the card to flex. it's already small enough to fit on phone screens,
 and dont want it to expand to fit desktop. Just need flexbox for positioning.
 
 Other things to consider:
  - semantic html for accessibility
- - CSS presets
- - what units to use. Declare font size in root? (in case user wants to resize font-size for accessibility.)
+ - CSS properties
+ 
 
 So a trick I learned in the last QR-code component challenge from reading the Josh Comeau article (listed below) is to use the screenshot function to measure the pixels 
 in the design file (first making sure the design file was being displayed as close to the desktop size of 1440px as possible.)
@@ -64,20 +64,11 @@ in the design file (first making sure the design file was being displayed as clo
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- pseudo-elements
+- transitions
 
 ### What I learned
-
-
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
+How to use pseudol-elements with hover states.
 
 
 ### Continued development
@@ -91,7 +82,4 @@ https://www.joshwcomeau.com/css/pixel-perfection/ - This helped me not stress to
 
 
 ## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+User @Old1337's solution (https://www.frontendmentor.io/solutions/preview-card-flex-box-CteziSMQP) gave me the idea for the ::before pseudoelement for the hover state of the main image.
