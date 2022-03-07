@@ -47,7 +47,7 @@ Looking at the design pic, theres a drop-shadow around the
 				(with two imgs next to text (maybe two smaller flexbox ls elements?)), 
 			hr, 
 			image + text next to it {flexbox}
-Maybe I could make the the main card a grid. Can you do a dropshadow on a grid? Might just be easier to do flexbox within flexbox. Don't think I need the card to flex. it's already small enough to fit on phone screens,
+Might just be easier to do flexbox within flexbox. Don't think I need the card to flex. it's already small enough to fit on phone screens,
 and dont want it to expand to fit desktop. Just need flexbox for positioning.
 
 Other things to consider:
