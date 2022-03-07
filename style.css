@@ -18,7 +18,6 @@ body {
     font-size: 18px;
 }
 
-
 main {
     background-color: var(--card-colour);
     width: 335px;
@@ -26,36 +25,75 @@ main {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
    
 }
 
-ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-}
-
-hr {
-    color: black;
-}
-
-img {
-    width: 283px;
-    height: auto; /*286px*/
-    align-self: center;
+.image {
+   
+    width: 285px;
+    height: 285px;
+    position: relative;
     margin-top: 25px;
+    
 }
 
-img:hover{
+.image img {
+    width: 100%;
+    border-radius: 8px;
+
+
+}
+
+.overlay {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:hsl(178, 100%, 50%);
+    border-radius: 8px;
+    opacity: 0;
+    
+}
+
+.overlay:hover:before {
     opacity: 0.5;
 }
 
+
+
+.overlay img {
+    width: 20%;
+    
+    opacity: 0;
+    
+}
+
+.overlay img:hover {
+    opacity: 0.75;
+}
+ 
 h1 {
-    font-size: 25px;
+    font-size: 20px;
+    
+    align-self: flex-start;
     font-weight: 600;
     margin-bottom: 0px;
-    margin: 25px;
+    margin-left: 22px;
+   
 }
 
 h1:hover{
@@ -64,31 +102,34 @@ h1:hover{
 
 p {
    
-    margin: 25px;
+    margin-left: 22px;
     color: var(--p-colour);
     line-height: 1.5em;
-    margin-top: -10px;
+    margin-top: 10px;
     font-size: 17px;
     font-weight: 300;
 }
 
-ul {
+.icon_text {
     padding: 0;
-    height: 30px;
+    width: 100%;
     font-size: 15px;
     font-weight: 400;
-    margin-top: -8px;
+    
     display: flex;
-    justify-content: space-around;
-    margin-left: 0;
+    justify-content: space-between;
+
+    
+    
    
 }
 
 #eth {
+    margin-left: 20px;
     color: cyan;
     font-weight: 600;
-    align-self: start;
-    margin-left: -20px;
+    align-self: flex-start;
+    
     
 }
 
@@ -103,7 +144,7 @@ ul {
 #threedays {
     color: var(--p-colour);
     display: flex;
-   
+   margin-right: 22px;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -127,41 +168,41 @@ span {
 
 hr {
     width: 85%;
-    margin-top: -5px;
+    margin-top: 20px;
     color:hsl(215, 32%, 27%);
 }
 
- #threedays, #eth, ul {
-   border: var(--card-colour) solid;
-    box-sizing: none;
-    
-}
+
 
 .creation {
+   
     display: flex;
     margin-top: 5px;
-   box-sizing: border-box;
+    align-items: center;
+    width: 100%;
 }
 
 .creation img {
-    width: 30px;
+    width: 35px;
+    height: 35px;
     border: solid white 1px;
     border-radius: 50%;
-    margin: 0;
     margin-left: 20px;
-}
+    
+    
 
 .creation p {
     
     margin: 0;
     margin-left: 15px;
     margin-top: 2px;
+    color: var(--p-colour);
 }
 
-.jules {
+#jules {
     color: white;
 }
 
-.jules:hover {
+#jules:hover {
     color: cyan;
 }
